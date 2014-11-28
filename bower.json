@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0",
+  "authors": [
+    "JiYongdong <jyd119@qq.com>"
+  ],
+  "description": "evaluation & learning",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~2.0.0",
+    "jquery": "~1.*",
+    "jquery-form-validator": "~2.1.47"
+  }
+}

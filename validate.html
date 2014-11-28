@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>basic form validate</title>
+</head>
+<body>
+
+<form>
+    <input required>
+    <input type="submit" value="submit">
+    <input type="button" value="validate" id="validate">
+</form>
+<script src="components/jquery/dist/jquery.js"></script>
+<script src="components/jquery-validation/dist/jquery.validate.js"></script>
+<script>
+    $(document).ready(function() {
+        $("form").validate();
+
+        $("#validate").on("click", function() {
+            alert("valide() => " + $("form").valid());
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
