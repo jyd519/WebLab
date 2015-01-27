@@ -24,7 +24,8 @@
     "jquery-form-validator": "~2.1.47",
     "select2": "~3.5.2",
     "jquery-mockjax": "~1.6.1",
-    "jquery-validate": "~1.13.1"
+    "jquery-validate": "~1.13.1",
+    "jquery-ui": "~1.11.2"
   },
   "devDependencies": {
     "select2": "~3.5.2"

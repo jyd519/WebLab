@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>wordpress</title>
+	<style type="text/css" media="screen">
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.topbar {
+	/* height: 48px; */
+	line-height:48px;
+	background-color: #2C3E50;
+}
+.logo-mobile {
+	display:none;
+}
+#pageTop {
+	display: none;
+}
+.inner {
+	width:960px;
+	margin: 0 auto;
+	overflow:hidden;
+	color: white;
+}
+.top-menu {
+	list-style:none;
+	list-style-image:none;
+	margin: 0;
+}
+.top-menu li {
+	/* display: inline-block; */
+	float: left;
+	margin-right: 5px;
+}
+.top-menu {
+	overflow:hidden;
+}
+
+.nav-top a {
+	color: white;
+	display:block;
+	text-decoration:none;
+}
+.nav-top {
+	float:left;
+}
+.search-form {
+	float:right;
+}
+.logo {
+	margin: 20px auto;
+	text-align: center;
+}
+.inner a {
+	text-decoration:none;
+	color: white;
+}
+
+.nav-menu {
+	list-style:none;
+	list-style-image:none;
+	text-align:center;
+}
+.nav-menu li {
+	display: inline-block;
+}
+.menu-toggle {
+	display: none;
+}
+
+.icon-bars:before {
+	content: 'menu';
+	margin: 0 5px;
+}
+.icon-search:before {
+	content: 'search';
+	margin: 0 5px;
+}
+/**
+ * Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See https://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+@media (max-width: 643px) {
+	.inner{
+		width: auto;
+		padding: 10px;
+	}
+	.logo{
+		display: none;
+	}
+	.content{
+		width: 100%;
+		margin-right: 0
+	}
+	.sidebar-container{
+		width: 100%
+	}
+	.nav-top .menu-top-container,.topbar .search-form,.nav-menu{
+		display: none;
+	}
+	.logo-mobile,.icon-bars,.icon-search{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.icon-bars,.icon-search{
+		float: right;
+	}
+	.icon-bars:hover,.icon-search:hover,
+	.icon-bars:focus,.icon-search:focus,
+	.icon-bars:active,.icon-search:active{
+		text-decoration: none;
+	}
+	.toggled-on .nav-menu{
+		display: block;
+	}
+
+	.toggled-on .page-item,.toggled-on .menu-item{
+		display: block;
+	}
+	.toggled-search{
+		margin-bottom: 40px;
+	}
+
+	.toggled-search .search-form{
+		display: block;
+		top: 40px;
+		width: 100%;
+		padding: 0 10px;
+	}
+	.toggled-search .search-form input[type=search]{
+		display: inline-block;
+		width: 100%;
+	}
+	.article-meta{
+		display: none;
+	}
+	.single .article-meta{
+		display: block;
+	}
+	.share-box{
+		display: none;
+	}
+	.backToTop{
+		display: none
+	}
+}
+		
+	</style>
+</head>
+
+<body>
+  <header class="header" role="banner">
+    <a class="screen-reader-text skip-link" id="pageTop" href="#content" title="Skip to content">Skip to content</a>
+    <div class="topbar">
+      <div class="inner">
+        <a href="http://www.qianduan.net/" title="前端观察" rel="home" class='logo-mobile'>前端观察</a>
+        <a class="icon-bars" href="javascript:;"></a>
+        <a class="icon-search" href="javascript:;"></a>
+        <nav class="nav-top">
+          <div class="menu-top-container">
+            <ul id="menu-top" class="top-menu">
+              <li id="menu-item-14170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14170"><a href="http://www.qianduan.net/about">关于我们</a>
+              </li>
+              <li id="menu-item-14168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14168"><a href="http://www.qianduan.net/copyright">版权声明</a>
+              </li>
+              <li id="menu-item-14169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14169"><a href="http://www.qianduan.net/sitemap">网站地图</a>
+              </li>
+              <li id="menu-item-14750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14750"><a href="http://www.qianduan.net/contribute">投稿</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <form role="search" method="get" class="search-form" action="http://www.qianduan.net/">
+          <label>
+            <span class="screen-reader-text">Search for:</span>
+            <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+          </label>
+          <input type="submit" class="search-submit" value="Search" />
+        </form>
+      </div>
+    </div>
+    <h1 class="logo"><a href="http://www.qianduan.net/" title="前端观察" rel="home">前端观察</a></h1>
+    <!-- 	<h2 class="site-description">专注于网站前端设计与前端开发</h2> -->
+    <nav class="navigation main-navigation" role="navigation">
+      <button class="menu-toggle">Menu</button>
+      <div class="menu-nav-container">
+        <ul id="menu-nav" class="nav-menu">
+          <li id="menu-item-14427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14427"><a href="/">Home</a>
+          </li>
+          <li id="menu-item-14175" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14175"><a href="http://www.qianduan.net/category/news-of-designs">Front News</a>
+          </li>
+          <li id="menu-item-14173" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-14173"><a href="http://www.qianduan.net/category/css-research">CSS</a>
+          </li>
+          <li id="menu-item-14176" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14176"><a href="http://www.qianduan.net/category/ajax-and-javascript-coding">Javascript</a>
+          </li>
+          <li id="menu-item-14171" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14171"><a href="http://www.qianduan.net/category/beautiful-interface-and-designs">ShowCase</a>
+          </li>
+          <li id="menu-item-14172" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14172"><a href="http://www.qianduan.net/category/sourcing-for-design">Resource</a>
+          </li>
+          <li id="menu-item-14174" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14174"><a href="http://www.qianduan.net/category/tips">Tips</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- #site-navigation -->
+  </header>
+</body>
+
+</html>

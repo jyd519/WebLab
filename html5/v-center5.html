@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+</head>
+
+<body>
+
+  <div id="outer">
+    <div id="middle">
+      <div id="inner">
+        any text any height any content, for example generated from DB everything is vertically centered
+      </div>
+    </div>
+  </div>
+
+  <style type="text/css">
+/* 不支持IE7 */
+    #outer {
+      height: 400px;
+      overflow: hidden;
+      position: relative; /*IE6*/
+      border:1px dashed green;
+    }
+    #outer[id] {
+      display: table;
+      position: static;
+    }
+    #middle { /*IE6*/
+      position: absolute;
+      top: 50%;
+    }
+    
+    #middle[id] {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      position: static;
+    }
+    #inner { /* for quirk explorer only */
+      position: relative;
+      top: -50%
+    }
+    /* optional: #inner[id] {position: static;} */
+  </style>
+
+<!-- example2 -->
+
+ <div class="greenBorder" style="display: table; height: 400px; #position: relative; overflow: hidden;">
+    <div style=" #position: absolute; #top: 50%;display: table-cell; vertical-align: middle;">
+      <div class="greenBorder" style=" #position: relative; #top: -50%">
+        any text<br>
+        any height<br>
+        any content, for example generated from DB<br>
+        everything is vertically centered
+      </div>
+    </div>
+  </div>  
+</body>
+
+</html>

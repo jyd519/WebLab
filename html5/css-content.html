@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <style type="text/css" media="screen">
+    #sidebar ul li a {
+      color: #900;
+      text-decoration: none;
+      padding: 3px 0;
+      display: block;
+    }
+    @media all and (min-width: 1001px) {
+      #sidebar ul li a:after {
+        content: " (" attr(data-email)")";
+        font-size: 11px;
+        font-style: italic;
+        color: #666;
+      }
+    }
+    @media all and (max-width: 1000px) and (min-width: 700px) {
+      #sidebar ul li a:before {
+        content: "Email: ";
+        font-style: italic;
+        color: #666;
+      }
+    }
+    @media all and (max-width: 699px) and (min-width: 520px),
+    (min-width: 1151px) {
+      #sidebar ul li a {
+        padding-left: 21px;
+        background: url(email.png) left center no-repeat;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar">
+    <ul id="nav">
+      <li><a data-email="chriscoyier@gmail.com" href="mailto:chriscoyier@gmail.com">Chris Coyier</a>
+      </li>
+      <li><a data-email="elisabeth@moss.com" href="mailto:elisabeth@moss.com">Elisabeth Moss</a>
+      </li>
+      <li><a data-email="amanda@righetti.com" href="mailto:amanda@righetti.com">Amanda Righetti</a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
