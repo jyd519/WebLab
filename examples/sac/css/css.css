@@ -12,8 +12,11 @@
 }
 .notice-head {
   overflow: hidden;
+  list-style: none;
+  margin:0;
+  padding:0;
 }
-.notice-head a {
+.notice-head li {
   display: block;
   float: left;
   width: 150px;
@@ -30,12 +33,12 @@
 .notice-head:first-child { 
    border-left: 1px solid #d9d9d9; 
  } 
-.notice-head a.selected {
+.notice-head li.selected {
   background-color: #fff;
   border-right: 1px solid #d9d9d9;
   border-top: 1px solid #d9d9d9;
 }
-.notice-head a.info {
+.notice-head li.info {
   font-size: 15px;
   color: #333;
   font-weight: 700;
@@ -106,6 +109,9 @@
 .left-menu a:hover {
   border-left: 1px solid #fd8238;
   background-color: #fff;
+}
+.notice-list {
+  overflow:hidden;
 }
 .notice-list ul {
   margin: 0 0 0 190px;

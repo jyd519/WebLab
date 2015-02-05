@@ -3,13 +3,13 @@
     $('.notice').each(function() {
       var notice = this;
 
-      $('.notice-head a', this).click(function() {
+      $('.notice-head li', this).click(function() {
         $(this).parent().children().removeClass('selected');
         $(this).addClass('selected');
-        var i = $('.notice-head a', notice).index(this);
+        var i = $('.notice-head li', notice).index(this);
         $('.notice-list', notice).hide()
           .eq(i).show();
-        return false;
+        // return false;
       }).eq(0).click();
 
       $('.notice-list', this).each(function() {
