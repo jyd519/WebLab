@@ -1,0 +1,3 @@
+[submodule "libs/jquery-impromptu"]
+	path = libs/jquery-impromptu
+	url = git@github.com:jyd519/jQuery-Impromptu.git
