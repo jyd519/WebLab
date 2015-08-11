@@ -1,4 +1,6 @@
-(function($) {
+/*global $:false */
+(function() {
+  "use strict";
   $(function() {
     $('.notice').each(function() {
       var notice = this;
@@ -9,7 +11,6 @@
         var i = $('.notice-head li', notice).index(this);
         $('.notice-list', notice).hide()
           .eq(i).show();
-        // return false;
       }).eq(0).click();
 
       $('.notice-list', this).each(function() {
@@ -32,4 +33,6 @@
     });
 
   });
-})($);
+
+}());
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>html5 - display- table</title>
+  <style type="text/css" media="screen">
+    /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    input,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    /*
+ * article, aside, details, figcaption, figure,
+ * footer, header, hgroup, menu, nav, section {
+ *   display: block;
+ * }
+ */
+    /*
+     * *, *:before, *:after {
+     *         box-sizing: border-box;
+     *             }
+     */
+ .ui-form-item {
+   padding: 100px 10px;
+ }
+ .ui-form-item label, .ui-form-item span, .ui-form-item input{
+    vertical-align:middle;display:inline-block;
+ }
+
+ .ui-form-item2 * {
+   font-size: 14px;
+ }
+ .ui-form-item2 input {
+   height: 40px;
+   line-height: 40px;
+ }
+ .checkbox {
+   vertical-align: middle;
+ }
+  </style>
+</head>
+
+<body>
+  <div class="ui-form-item">
+    <label for="J-accName" class="ui-label">手机号</label>
+    <span class="ui-input ui-input-disabled ui-input-countryCode" id="J-countryMobileCode">+86</span>
+    <input id="J-accName" name="accName" class="ui-input" type="text" placeholder="请输入你的手机号码" data-explain="输入的手机号码将作为账户名。" data-error="    " maxlength="100" value="" seed="JIndexForm-JAccName" smartracker="on" data-widget-cid="widget-1" data-validator-set="widget-1">
+  </div>
+  <div class="ui-form-item2">
+    <label for="J-accName" class="ui-label">手机号</label>
+    <span class="ui-input ui-input-disabled ui-input-countryCode" >+86</span>
+    <input name="accName" class="ui-input" type="text" placeholder="请输入你的手机号码" data-explain="输入的手机号码将作为账户名。" data-error="    " maxlength="100" value="" seed="JIndexForm-JAccName" smartracker="on" data-widget-cid="widget-1" data-validator-set="widget-1">
+    <label >test </label>
+    <input type="checkbox" class="checkbox">
+  </div>
+
+<form>
+    <div>
+        <label><input type="checkbox" /> Label text</label>
+    </div>
+</form>
+ 
+<div class="group">
+    <input type="checkbox" /> <label>Label text</label>
+</div>
+
+<style type="text/css">
+form label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+}
+form input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0 10px 0 200px;;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+.group  {
+  font-size: 16px;
+}
+.group label {
+  line-height: 30px;
+}
+
+</style>
+  
+</body>
+
+</html>

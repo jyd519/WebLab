@@ -1,0 +1,57 @@
+/* clear float without add additional element */
+/* ---------------------------------------------------------------------- */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Enable document outline */
+.hidden {
+ position:absolute;
+ clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+ clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* ---------------------------------------------------------------------- */
+/* truncate long text */
+.truncate {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* use border-box . IE8+ */
+/*
+ * *, *:before, *:after {
+ *   -moz-box-sizing: border-box;
+ *   -webkit-box-sizing: border-box;
+ *   box-sizing: border-box;
+ * }
+ */
+
+
+

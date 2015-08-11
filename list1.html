@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>test list</title>
+  </head>
+  <body>	
+  <style type="text/css" media="screen">
+  .list-horiz, .list-vert {
+    overflow: hidden;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+  }
+  .list-horiz .list-item {
+    float: left;
+    margin: 0 10px;
+    line-height: 20px;
+  }
+  .list-vert .list-item {
+    margin: 5px 10px;
+    line-height: 20px;
+  }
+  .list-item .label, .list-item .text {
+    display: inline-block;
+    *zoom: 1;
+  }  
+  .list-item .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+ .box {
+   border: 1px solid #CDCDCD;
+   border-radius: 3px;
+   position: relative;
+   margin: 10px 0;
+   -webkit-box-shadow: 2px 2px 1px #DDD; 
+   -moz-box-shadow: 2px 2px 1px #DDD; 
+   box-shadow: 2px 2px 1px #DDD;
+   padding: 8px;
+ }
+
+
+  </style>
+  <div id="name" class="box"> 
+     <ul class="list-horiz">
+       <li class="list-item"><span class="label">xabc</span><span class="text">value</span></li>
+       <li class="list-item">cdef</li>
+       <li class="list-item">aaa</li>
+     </ul>
+  </div>
+  <div id="name" class="box"> 
+     <ul class="list-vert">
+       <li class="list-item"><span class="label">xabc</span><span class="text">value</span></li>
+       <li class="list-item">cdef</li>
+       <li class="list-item">aaa</li>
+     </ul>
+  </div>
+  </body>
+</html>

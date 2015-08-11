@@ -26,10 +26,25 @@
     "jquery-mockjax": "~1.6.1",
     "jquery-validate": "~1.13.1",
     "jquery-ui": "~1.11.2",
-    "respond": "~1.4.2"
+    "respond": "~1.4.2",
+    "select2-dist": "~4.0.0",
+    "requirejs": "~2.1.18",
+    "highcharts-release": "~4.1.7",
+    "taffydb": "*",
+    "postal.js": "~1.0.6",
+    "urianchor": "https://github.com/mmikowski/urianchor.git#master",
+    "moment": "~2.10.6"
   },
   "devDependencies": {
     "select2": "~3.5.2",
-    "html5shiv-dist": "~3.6.2"
+    "html5shiv-dist": "~3.6.2",
+    "underscore": "~1.7.0",
+    "equalize": "~1.0.1",
+    "spin.js": "~2.0.2",
+    "responsive-nav": "~1.0.34",
+    "masonry": "~3.2.2",
+    "jquery-validation": "~1.13.1",
+    "jquery-form": "~3.46.0",
+    "chartjs": "~1.0.2"
   }
 }

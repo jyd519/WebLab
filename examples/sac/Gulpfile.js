@@ -44,7 +44,7 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./build/script'))
     .pipe(notify({ message: 'Scripts task complete' }));
 
-  gulp.src('./script/jquery.js')
+  gulp.src('./script/*.js')
     .pipe(gulp.dest('./build/script'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });

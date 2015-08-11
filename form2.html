@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>test form</title>
+  <style type="text/css" media="screen">
+    input.form-control {
+      height: 24px;
+      line-height: 24px;
+      text-indent: 8px;
+      font-size: 16px;
+    }
+    .form-group {
+      margin: 10px 0;
+      padding: 0;
+      vertical-align: middle;
+      display: block;
+    }
+    .form-control {
+      width: 100%;
+      border-radius: 3px;
+      display: block;
+    }
+    .form-inline .form-group {
+      display: inline-block;
+    }
+    .form-inline .form-control {
+      width: 100px;
+      display: inline-block;
+      margin: 10px 10px;
+    }
+    .form-inline label,
+    .form-inline span,
+    .form-inline input {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .row {
+      display: block;
+    }
+    .row .col-2 {
+      width: 15%;
+      float: left;
+    }
+    .row .col-10 {
+      width: 15%;
+      float: left;
+    }
+    .checkbox label,
+    .checkbox input {
+      vertical-align: middle;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 500px; margin: 10px auto; position:relative;">
+    <div class="form-group">
+      <label for="">field 1</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">field 1</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="">field long 1</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="checkbox">
+      <label for="">field long 1</label>
+      <input type="checkbox" />
+    </div>
+  </div>
+  <div class="form-inline" style="width: 800px; margin: 20px auto; position:relative;">
+    <div class="form-group">
+      <label for="">field 1</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">field 1</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="">field long 1</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="">field long 1</label>
+      <input type="checkbox" class="checkbox" />
+      <input type="button" class="btn" name="f1" id="f1" value="test" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">2</div>
+    <div class="col-10">10</div>
+  </div>
+</body>
+
+</html>
