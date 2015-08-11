@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>tab control</title>
+    <script>
+      
+    </script>
+    <style type="text/css" media="screen">
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+    a {
+      color: #428bca;
+    }
+
+    .nav-tabs::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .nav-tabs {
+      list-style: none;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav-tabs li {
+      float: left;
+      position: relative;
+      margin-bottom: -1px;
+      margin-left: 10px;
+    }
+    .nav-tabs li a {
+      text-decoration: none;
+      display:block;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      border: 1px solid transparent;
+    }
+    .nav-tabs li.active a, .nav-tabs li.active a:hover {
+      color: #555;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      border-bottom-color: transparent;
+      cursor: default;
+    }
+    .nav-tabs li a:hover {
+      background-color: #ddd;
+      border-color: #eee #eee #ddd;
+      background-color: #eee;
+      border-bottom-color: transparent;
+    }
+    .clear {
+      clear: both;
+    }
+    </style>
+  </head>
+  <body>	
+  <div style="margin: 20px">
+    <ul class="nav-tabs">
+      <li class="active"><a href="#">abc</a></li>
+      <li><a href="#">cde</a></li>
+      <li><a href="#">fgh</a></li>
+    </ul>
+  </div>
+  </body>
+</html>

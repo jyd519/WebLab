@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>nav test</title>
+    <script>
+      
+    </script>
+    <style type="text/css" media="screen">
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+
+.container {
+  clear: both;
+  position: relative;
+}
+
+nav {
+  /* height: 38px; */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  /* line-height: 39px; */
+  text-align: right;
+  border-bottom: 1px solid #b83130;
+  background: #cb3837;
+  overflow: hidden;
+}
+
+
+nav a {
+  display: inline-block;
+  line-height: 36px;
+  padding: 0 10px;
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  background: #cb3837;
+  transition: all 0.1s;
+}
+
+nav a:first-child {
+  float: left;
+}
+
+nav a:hover, nav a.active {
+  color: #fff;
+  text-decoration: none;
+  background: #a42b2b;
+}
+
+
+    </style>
+  </head>
+  <body>	
+  <div style="margin: 20px">
+    <nav>
+        <div class="container">
+          <a href="#" id="npm-expansions">Neverending Plethora of Modules</a>
+          <a href="/private-modules">npm private modules</a>
+          <a href="/enterprise" class="active">npm Enterprise</a>
+          <a href="https://docs.npmjs.com">documentation</a>
+          <a href="http://blog.npmjs.org/?__hstc=72727564.596820f2db1deed5030ac1286c1aef87.1418612224801.1423457434620.1423820408514.11&amp;__hssc=72727564.5.1423820408514&amp;__hsfp=1116741652">blog</a>
+          <a href="/npm-weekly">npm weekly</a>
+          <a href="/jobs">jobs</a>
+          <a href="/support">support</a>
+        </div>
+      </nav>
+  </div>
+  </body>
+</html>
